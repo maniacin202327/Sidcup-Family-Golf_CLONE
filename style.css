@@ -1,0 +1,301 @@
+/* Here, all the z-index position are defined by {-1, 1, 5, 9, 10} only. */
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing:border-box;
+    font-family:'Montserrat';
+    color: rgb(255, 255, 255);
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+/* Animations */
+@keyframes motionText{
+    form{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+    
+}
+
+/* cursor div */
+#cursor{
+    height: 25px;
+    width: 25px;
+    position: fixed;
+    background-color: #95c11e;
+    border-radius: 50%;
+    z-index: 10;
+
+}
+#cr_blur{
+    height: 600px;
+    width: 600px;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    background-color: #96c11e5e;
+    border-radius: 50%;
+    z-index: 1;
+    filter: blur(60px);
+    pointer-events: none;
+}
+
+/* nav_bar div */
+#nav{
+    height: 120px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 150px;
+    gap: 55px;
+    z-index: 10;
+    position: fixed;
+}
+#nav img{
+    height: 70px;
+}
+#nav h3{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: large;
+}
+#nav h3:hover{
+    color: rgba(85, 255, 0, 0.70);
+    font-weight: 500;
+    font-size: larger;
+} 
+
+/* background Video */
+video{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* main div */
+#main{
+    position: relative;
+    background-color: rgb(000, 000, 000, .35);
+}
+/* page 1 */
+#page1{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+    z-index: 5;
+}
+#page1 h1{
+    text-transform: uppercase;
+    font-size: 160px;
+    font-weight: 900;
+    position: relative;
+}
+#page1 h1::before{
+    content: "eat. drink. play.";
+    position: absolute;
+    color: rgb(000, 000, 000);
+    top: -5px;
+    left: -6px;
+    -webkit-text-stroke: 2px #c5ff26;
+    z-index: -1;
+}
+
+#page1 h2{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 800;
+    margin-top: 5px;
+    margin-bottom: 15px;
+
+}
+#exclam{
+    color: #c5ff26;
+}
+#page1 p{
+    width: 35%;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 400;
+
+}
+
+/* page 2 */
+#page2{
+    min-height: 100vh;
+    width: 100%;
+    z-index: 5;
+
+}
+
+/* motion_text div */
+#motionText{
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 9;
+}
+#motionText::-webkit-scrollbar{
+    display: none;
+}
+#motionText h3{
+    display: inline-block;
+    font-size: 140px;
+    font-weight: 900;
+    font-family: 'Gilroy';
+    margin-right: 15px;
+    color: rgb(0, 0, 0);
+    transition: all linear 0.4s;
+    -webkit-text-stroke: 1px #c5ff26;
+}
+#motionText h3:hover{
+    color: #c5ff26;
+}
+.textVal{
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: motionText;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+/* about_us div */
+#aboutUs{
+    height: 40vh;
+    width: 100%;
+    padding: 0 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    z-index: 9;
+}
+#aboutUs img{
+    height: 250px;
+    width: 250px;
+    border-radius: 6%;
+    object-fit: cover;
+    margin: 0 70px;
+}
+#aboutUs_text{
+    width: 50%;
+    text-align: center;
+}
+#aboutUs_text h4{
+    font-size: 50px; 
+    font-weight: 900;
+    margin-bottom: 25px;
+}
+#aboutUs_text p{
+    font-size: 20px; 
+    font-weight: 500;
+    line-height: 35px;
+}
+#pleaseNote{
+    font-size: larger;
+    font-weight: 800;
+    color: rgb(197, 255, 38);
+}
+.time{
+    font-weight: 600;
+    font-size: large;
+    color: rgb(197, 255, 38);
+    font-style: italic;
+}
+
+/* cards */
+#card_Container{
+    height: 60vh;
+    width: 100%;
+    position: relative;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+.card{
+    height: 85%;
+    width: 25%;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: all ease 0.5s;
+}
+.overlay{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all ease 0.2s;
+
+}
+.card .overlay {
+    display: flex;
+    align-items: end;
+    justify-content: left;
+
+}
+.card .overlay h2{
+    color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin-left: 5px;
+    font-size: 37px;
+    font-weight: 800;
+}
+.card .overlay #up_text{
+    color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    line-height: 20px;
+    font-weight: 800;
+    font-size: 22px;
+}
+#card1{
+    background-image: url(./media/img_card1.jpg);
+}
+#card2{
+    background-image: url(./media/img_card2.jpg);
+}
+#card3{
+    background-image: url(./media/img_card3.jpg);
+}
+.underlay{
+    height: 100%;
+    width: 100%;
+    background-color: #c5ff26;
+    position: relative;
+    padding: 50px;
+    padding-top: 100px;
+    opacity: 0;
+    transition: all ease 0.5s;
+}
+.underlay h2{
+    color: rgba(0, 0, 0, 0.690);
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 900;
+}
+.underlay p{
+    color: rgba(0, 0, 0);
+    font-size: 20px;
+    font-weight: 300;
+}
+.card:hover .overlay{
+    opacity: 0;
+}
+.card:hover .underlay{
+    opacity: 1;
+}

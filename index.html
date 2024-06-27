@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidcup Family Golf</title>
+
+    <!-- icon -->
+    <link rel="icon" href="media\icon_logo.png" type="image/icon-x">
+    
+    <!-- FONT: montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- FONT: gilroy -->
+    <link href="https://cdn.jsdelivr.net/gh/repalash/gilroy-free-webfont@fonts/Gilroy-Extrabold.css" rel="stylesheet">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <!-- div.Nav -->
+    <div id="cursor"></div>
+    <div id="cr_blur"></div>
+    <div id="nav">
+            <img src="media\logo_golfclub.svg" alt="LOGO"> <!-- logo -->
+            <h3>TOPTRACER RANGE</h3>
+            <h3>GOLF LESSONS</h3>
+            <h3>ADVENTURE GOLF</h3>
+            <h3>CAFÉ</h3>
+            <h3>EVENTS</h3>
+    </div>
+
+    <!-- video -->
+    <video autoplay loop muted src="media\backgroundVid.mp4"></video>
+    
+    <!-- div.main -->
+    <div id="main">
+
+        <!-- subDiv.page1 -->
+        <div id="page1">
+
+            <h1>eat. drink. play.</h1>
+            <h2>WELCOME TO SIDCUP FAMILY GOLF<span id="exclam">!</span></h2>
+            <p>Sidcup Family Golf is a Toptracer driving range and crazy golf venue in Sidcup, South East London. Passionate about technology, player development and making golf fun and accessible to everyone.</p>
+        </div>
+
+        <!-- subDiv.page2 -->
+        <div id="page2">
+
+            <!-- motion_text div -->
+            <div id="motionText">
+
+                <div class="textVal">            
+                    <h3>TOPTRACER RANGE</h3>
+                    <h3>GOLF LESSONS</h3>
+                    <h3>ADVENTURE GOLF</h3>
+                    <h3>CAFÉ</h3>
+                    <h3>EVENTS</h3></div>
+                <div class="textVal">            
+                    <h3>TOPTRACER RANGE</h3>
+                    <h3>GOLF LESSONS</h3>
+                    <h3>ADVENTURE GOLF</h3>
+                    <h3>CAFÉ</h3>
+                    <h3>EVENTS</h3></div>
+            </div>
+
+            <!-- about_us div -->
+            <div id="aboutUs">
+
+                <div id="image1" class="aboutUs" data-tilt>
+                    <img src="./media/about_Img1.jpg" alt="image">
+                </div>
+
+                <div id="aboutUs_text" class="aboutUs" data-tilt>
+                        <h4>ABOUT US</h4>
+                        <p>
+                            Home to a 46-bay, multi-tier, floodlit driving range, powered by Toptracer Range technology. Complimented by a practice green and bunker, coffee shop and American Golf Store. There truly is something for everyone as we also boast two outdoor 18-hole dinosaur themed crazy golf courses.
+                        </p>
+                        <br>
+                        <p>
+                            <span id="pleaseNote">Please note:</span> We are a cashless venue. The range closes at <span class="time">10pm</span> with last balls at <span class="time">9pm</span>.
+                        </p>
+                </div>
+
+                <div id="image2" class="aboutUs" data-tilt>
+                        <img src="./media/about_Img2.jpg" alt="image">
+                </div>
+            </div>
+            
+            <!-- card_container div -->
+            <div id="card_Container">
+
+            <!-- card 1 -->
+                <div class="card" id="card1" data-tilt>
+                    <div class="overlay">
+                        <h2>TOPTRACER RANGE</h2>
+                    </div>
+
+                    <div class="underlay">
+                        <h2>TOPTRACER RANGE</h2>
+                        <p>
+                            Our range delivers the same ball-tracking
+                            technology that traces the shots of the game's
+                            best players on TV.
+                            <br>
+                            <br>
+                            Toptracer Range technology offers a
+                            fun, engaging, tech-driven experience that
+                            appeals to seasoned players, range rivals, friends,
+                            family members, and even first-time golfers.
+                        </p>
+                    </div>
+                </div>
+
+            <!-- card 2 -->
+                <div class="card" id="card2" data-tilt>
+                    <div class="overlay">
+                        <h2>
+                            <span id="up_text">
+                                MR MULLIGAN'S
+                            </span>
+                            <br>
+                                ADVENTURE GOLF
+                        </h2>
+                    </div>
+
+                    <div class="underlay">
+                        <h2>ADVENTURE GOLF</h2>
+                        <p>
+                            Adventure awaits you!
+                            <br>
+                            <br>
+                            <br>
+                            Become a Jurassic explorer as you delve into the
+                            land of the dinosaur,;! Putt your way through
+                            prehistoric landscape, cascading waterfalls and
+                            meet some dinosaur friends along the way.
+                        </p>
+                    </div>
+                </div>
+
+            <!-- card 3 -->
+                <div class="card" id="card3" data-tilt>
+                    <div class="overlay">
+                        <h2>GOLF LESSONS</h2>
+                    </div>
+
+                    <div class="underlay">
+                        <h2>GOLF LESSONS</h2>
+                        <p>
+                            Passionate about player development, whether
+                            you are new to the game or an aspiring pro, we
+                            offer both group and individual lessons tailored
+                            to you with the sole focus of helping you reach
+                            your goals.
+                        </p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+    </div>
+
+<!-- script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- vanilla-tilt js -->
+
+    <!-- tilt js for 'about us' div -->
+        <script type="text/javascript">
+            VanillaTilt.init(document.querySelectorAll(".aboutUs"), {  
+                max: 25,
+                speed: 10000,
+            });
+        </script>
+
+    <!-- tilt js for 'cards' -->
+        <script type="text/javascript">
+            VanillaTilt.init(document.querySelectorAll(".card"), {  
+                max: 25,
+                speed: 8000,
+            });
+        </script>
+
+<!-- script.main -->
+    <script src="./script.js"></script>
+    <script src="./vanilla_til.js"></script>
+
+</body>
+</html>
