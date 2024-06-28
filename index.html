@@ -68,7 +68,7 @@
             </div>
 
             <!-- about_us div -->
-            <div id="aboutUs">
+            <div id="about_Us">
 
                 <div id="image1" class="aboutUs" data-tilt>
                     <img src="./media/about_Img1.jpg" alt="image">
@@ -160,8 +160,116 @@
                     </div>
                 </div>
             </div> 
+            
+            <!-- green div -->
+            <div id="green_div">
+                <img src="./media/dots-side-left.svg" alt="">
+                
+                <h2>
+                    SIGN UP FOR SIDCUP NEWS AND SPECIAL OFFERS
+                    STRAIGHT TO YOUR INBOX
+                </h2>
+
+                <img src="./media/dots-side-right.svg" alt="">
+            </div>
         </div>
 
+        <!-- subDiv.page3 -->
+        <div id="page3">
+
+            <!-- quotation div -->
+            <div id="quotation_div">
+                <img id="colon1" class="colon" src="./media/quote-left.svg" alt="">
+                
+                <p id="quote_text" data-tilt>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium blanditiis ipsa cupiditate odit nisi. Neque voluptates nesciunt ducimus, explicabo mollitia deleniti tempore ipsam quia nihil, inventore est voluptatum labore accusantium.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, veniam!
+                </p>
+
+                <img id="colon2" class="colon" src="./media/quote-right.svg" alt="">
+            </div>
+        </div>
+
+        <!-- subDiv.page4 -->
+         <div id="page4">
+
+            <!-- heading text -->
+            <h1>
+                WHAT ARE YOU WAITING FOR?
+            </h1>
+
+            <!-- mini card container -->
+            <div id="miniCard_container">
+
+                <div class="minCards" id="mCard1" data-tilt>
+                        <h2>
+                            TOPTRACER RANGE
+                        </h2>
+
+                    <img src="./media/min-card1.jpg" alt="">
+                </div>
+
+                <div class="minCards" id="mCard2" data-tilt>
+                        <h2>
+                            GOLF LESSONS
+                        </h2>
+                    
+                    <img src="./media/min-card2.jpg" alt="">
+                </div>
+
+                <div class="minCards" id="mCard3" data-tilt>
+                        <h2>
+                            ADVENTURE GOLF
+                        </h2>
+
+                    <img src="./media/min-card3.jpg" alt="">
+                </div>
+            </div>
+         </div>
+
+        <!-- footer -->
+         <div id="footer">
+            <img src="./media/dots-footer.svg" alt="">
+
+            <div id="footer-col0">
+                <img src="media\logo_golfclub.svg" alt="">
+            </div>
+
+            <div id="footer-col1">
+                <h2>TOPTRACER RANGE</h2>
+
+                <h2>CRAZY GOLF</h2>
+                
+                <h2>CAFÉ</h2>
+            </div>
+
+            <div id="footer-col2">
+                    <h2>EVENTS</h2>
+
+                    <h2>GOLF LESSONS</h2>
+                    
+                    <h2>CONTACT US</h2>
+            </div>
+                
+            <div id="footer-col3">
+                <h2>
+                    A20, SIDCUP BYPASS
+                    <br>
+                    CHISLEHURST
+                    <br>
+                    KENT
+                    <br>
+                    BR7 6RP
+                    <br>
+                    TEL: 0208 309 018
+                    <br>
+                    <span id="bold">GET DIRECTIONS</span>
+                </h2>
+            </div>
+            <footer>
+                <p>Copyright © 2023 Adventure Leisure Ltd. All rights reserved. | Privacy Policy | Terms And Conditions | Gender Pay Gap</p>
+            </footer>
+        </div>
     </div>
 
 <!-- script -->
@@ -182,6 +290,22 @@
             VanillaTilt.init(document.querySelectorAll(".card"), {  
                 max: 25,
                 speed: 8000,
+            });
+        </script>
+
+    <!-- tilt js for 'quote' -->
+        <script type="text/javascript">
+            VanillaTilt.init(document.querySelectorAll(".quote_text"), {  
+                max: 25,
+                speed: 1000,
+            });
+        </script>
+    
+    <!-- tilt js for 'mini cards' -->
+        <script type="text/javascript">
+            VanillaTilt.init(document.querySelectorAll(".minCards"), {  
+                max: 25,
+                speed: 10000,
             });
         </script>
 

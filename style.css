@@ -10,6 +10,22 @@ html, body{
     width: 100%;
     height: 100%;
 }
+*::selection{
+    background-color: #fff;
+    color: #91c600;
+    transition: all ease 0.2s;
+}
+body::-webkit-scrollbar{
+    display: block;
+    width: 10px;
+    background-color: black;
+    border: 1px solid rgba(106, 144, 2, 0.834);
+}
+body::-webkit-scrollbar-thumb{
+    background-color: rgb(176, 240, 0);
+    width: 10px;
+    border-radius: 30px;
+}
 
 /* Animations */
 @keyframes motionText{
@@ -24,8 +40,8 @@ html, body{
 
 /* cursor div */
 #cursor{
-    height: 25px;
-    width: 25px;
+    height: 15px;
+    width: 15px;
     position: fixed;
     background-color: #95c11e;
     border-radius: 50%;
@@ -63,11 +79,11 @@ html, body{
     text-transform: uppercase;
     font-weight: 500;
     font-size: large;
+    transition: all ease 0.2s;
 }
 #nav h3:hover{
-    color: rgba(85, 255, 0, 0.70);
+    color: #74d300;
     font-weight: 500;
-    font-size: larger;
 } 
 
 /* background Video */
@@ -173,7 +189,7 @@ video{
 }
 
 /* about_us div */
-#aboutUs{
+#about_Us{
     height: 40vh;
     width: 100%;
     padding: 0 60px;
@@ -183,7 +199,7 @@ video{
     position: relative;
     z-index: 9;
 }
-#aboutUs img{
+#about_Us img{
     height: 250px;
     width: 250px;
     border-radius: 6%;
@@ -283,7 +299,7 @@ video{
     transition: all ease 0.5s;
 }
 .underlay h2{
-    color: rgba(0, 0, 0, 0.690);
+    color: rgba(0, 0, 0);
     margin-bottom: 20px;
     font-size: 40px;
     font-weight: 900;
@@ -298,4 +314,199 @@ video{
 }
 .card:hover .underlay{
     opacity: 1;
+}
+
+/* green div */
+#green_div{
+    height: 28vh;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 60px 0;
+    background: linear-gradient(to left bottom, rgb(25, 135, 0),  rgb(204, 255, 0)); 
+}
+#green_div h2{
+    width: 50%;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+#green_div img{
+    height: 100%;
+    width: 180px;
+    object-fit: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+/* page 3 */
+#page3{
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* quotation div */
+#quotation_div{
+    height: 50%;
+    width: 50%;
+    z-index: 9;
+    position: relative;
+}
+#quotation_div p{
+    width: 100%;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    transition: all ease 0.5s;
+}
+#quotation_div img{
+    height: 60px;
+    position: absolute; 
+}
+#page3 #colon1{
+    top: -50%;
+    left: -10%;
+}
+#page3 #colon2{
+    bottom: -50%;
+    right: -10%;
+}
+
+/* page 4 */
+#page4{
+    height: 50vh;
+    width: 100%;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#page4 h1{
+    font-family: 'Gilroy';
+    font-size: 109px;
+    font-weight: 900;
+    position: absolute;
+    top: 55px;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+/* mini cards */
+#miniCard_container{
+    height: 100%;
+    width: 100%;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.minCards{
+    height: 39%;
+    width: 25%;
+    z-index: 9;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px; 
+}
+.minCards h2{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(163, 212, 33);
+    color: black;
+    font-size: 37px;
+    font-weight: 900;
+    position: absolute;
+    z-index: 9;
+    transition: all ease 0.5s;
+}
+.minCards img{
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    object-fit: cover;
+    z-index: 8;
+    scale: 1.2;
+    transition: all ease 0.5s;
+}
+.minCards:hover h2{
+    color: white;
+    background-color: transparent;
+}
+.minCards:hover img{
+    scale: 1;
+}
+
+/* footer div */
+#footer{
+    height: 40vh;
+    width: 100%;
+    z-index: 9;
+    background: linear-gradient(to left bottom, rgb(25, 135, 0),  rgb(204, 255, 0)); 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+#footer > img{
+    height: 100%;
+    width: 25%;
+    z-index: -1;
+    left: 0%;
+    position: absolute;
+}
+#footer h2{
+    color: black;
+}
+#footer-col0 > img{
+    height: 100px;
+}
+#footer-col0m, #footer-col1, #footer-col2, #footer-col3{
+    width: fit-content;
+    position: relative;
+    z-index: 9;
+    text-align: justify;
+}
+#footer-col1 h2{
+    font-size: 30px;
+    line-height: 55px;
+    font-weight: 900;
+}
+#footer-col2 h2{
+    font-size: 30px;
+    line-height: 55px;
+    font-weight: 900;
+}
+#footer-col3 h2{
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 500;
+}
+#footer-col3 h2 > #bold{
+    font-weight: 800;
+    color: black;
+}
+footer{
+    height: 5vh;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    bottom: 0%;
+    padding: 10px 500px;
+}
+footer > p{
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
 }
