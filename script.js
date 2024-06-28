@@ -62,15 +62,16 @@ gsap.from("#about_Us, #aboutUs_text", {
     }
 })
 gsap.from("#card_Container, .card", {
+    y:200,
     scale: 0.9,
-    duration: 1,
-    stagger: 0.1,
+    duration: 2,
+    stagger: 0.2,
     scrollTrigger:{
         trigger: "#card_Container",
         scroller: 'body',
         start: "top 65%",
         end: "top 60%",
-        scrub: 2,
+        scrub: 4,
         // markers: true
     }
 })
