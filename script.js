@@ -64,7 +64,6 @@ gsap.from("#about_Us, #aboutUs_text", {
 gsap.from("#card_Container, .card", {
     scale: 0.9,
     duration: 1,
-    opacity: 0,
     stagger: 0.1,
     scrollTrigger:{
         trigger: "#card_Container",
