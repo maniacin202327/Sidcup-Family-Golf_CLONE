@@ -78,7 +78,7 @@ body::-webkit-scrollbar-thumb{
 #nav h3{
     text-transform: uppercase;
     font-weight: 500;
-    font-size: large;
+    font-size: 20px;
     transition: all ease 0.2s;
 }
 #nav h3:hover{
